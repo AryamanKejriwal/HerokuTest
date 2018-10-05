@@ -1,1 +1,1 @@
-web: python3 manage.py runserver -port=$PORT
+web: gunicorn HerokuTest.wsgi --log-file -
