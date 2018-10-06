@@ -27,7 +27,7 @@ SECRET_KEY = 'd6m=k90@0^lneotpg_v!*aj%1=j@azx53+k0n02^6)(pe9h63g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['innovationhubwebsite.herokuapp.com']
+ALLOWED_HOSTS = ['innovationhubwebsite.herokuapp.com', "hubsitetest.herokuapp.com"]
 
 
 # Application definition
@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'herokuTest.urls'
