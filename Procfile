@@ -1,1 +1,1 @@
-web: gunicorn herokuTest.wsgi --log-file -
+web: python manage.py runserver
